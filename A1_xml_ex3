@@ -1,0 +1,14 @@
+<Empresa>
+    <Empleado NumEmpleado="1234567890">
+        <Apellido>Perez</Apellido>
+        <Nombre>Juan</Nombre>
+ <Email>juanperez@gmail.com</Email>
+        <Telefono>666 555 444</Telefono>
+    <Direccion>
+        <Calle>Carrer de Pau Claris, 121</Calle>
+        <Ciudad CP="08009">Barcelona</Ciudad>
+    </Direccion>
+    </Empleado>
+</Empresa>
+
+<!-- calle puede ser atributo tanto de direccíon como de ciudad por que no hay un limite de cuantos atributos se puede haber en un elemento -->

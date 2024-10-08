@@ -1,0 +1,20 @@
+<pais/>
+<!--no se puede usar aquí-->
+<dia>21</dia>
+<!--tiene que acabar con el mismo nombre-->
+<mes>10</mes>
+<!--el / tiene que ir antes-->
+<ciudad>Barcelona</ciudad>
+<!--tiene que acabar con el mismo nombre-->
+<ciudad>Barcelona</ciudad>
+<!--sensitivo a mayuscualas-->
+<colores2>Naranja y verde</colores2>
+<!--no empieza por num-->
+<_rojo/>
+<!--hay que expresarlo así si está vacío-->
+<Aficiones>Cine, Bailar, Nadar</Aficiones>
+<!--no espacios en el nombre-->
+<persona><nombre>Maria</nombre></persona>
+<!--[(]) [()] mal ordenado-->
+<colorFavorito>blanco<colorFavorito>
+<!--no espacios-->

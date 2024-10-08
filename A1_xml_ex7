@@ -1,0 +1,22 @@
+<casa>
+	<persona>
+    		<nombre>Pere Garcia</nombre>
+	</persona>
+	<perro>
+    		<nombre>Rufy</nombre>
+	</perro>
+</casa>
+
+<!-- no puede haber más de 1 elemento raíz-->
+-----------------------------------
+
+<casa>
+	<persona>
+	    <nombre>Pere</nombre>
+	    <apellido> Pérez </apellido>
+	    <apellido2>Garcia</apellido2>
+	    <edad>22</edad>
+	</persona>
+</casa>
+
+<!-- como hace referencia a la misma persona las junto -->

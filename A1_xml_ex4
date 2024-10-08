@@ -1,0 +1,20 @@
+<comanda>
+	<dades>
+		<número>13</número>
+		<data>2011-09-28</data>
+		<client>
+			<nom>Manuel Rovira</nom>
+			<poblacio>Girona</poblacio>
+		</client>
+	</dades>
+	<articles>
+		<article>
+			<codi>687</codi>
+			<descripció>Ratolí</descripció>
+		</article>
+		<article>
+			<codi>129851</codi>
+			<descripció>Pendrive 4GB</descripció>
+		</article>
+	</articles>
+</comanda>

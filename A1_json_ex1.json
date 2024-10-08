@@ -1,0 +1,62 @@
+{
+	"alumnos" [
+		{
+			"nombre": "Juan García",
+			"fechaNacimiento": {
+				"año": "2001",
+				"mes": "Febrero",
+				"día": "23"
+				},
+			"lugarNacimiento": "Barcelona"
+		}
+	]
+}
+-------------------------------------------
+{
+	"Establecimientos" [
+		{
+			"nombre": "Pasqual",
+			"tipo": "Bar de tapas",
+			"dirección": "av. Diagonal 232",
+			"propietario": "Joan Alcover"
+		},
+		{
+			"nombre": "Meravelles",
+			"tipo": "restaurante de menú",
+			"dirección": "meridiana 111",
+			"propietario": "Maria Garcia"
+		},
+		{
+			"nombre": "Racó",
+			"tipo": "restaurante de menú",
+			"dirección": "av. Roma 221",
+			"propietario": "Alba Puig"
+		}
+	}
+}
+------------------------------------------
+{
+	"obras": [
+		{
+			"nombre" : "Azul sobre Blanco",
+			"autor" : "Pere Àguila",
+			"fecha" : "2014",
+			"estilo" : "cuadro abstracto",
+			"tipo" : "óleo"
+		},
+		{
+			"nombre" : "Gris oscuro",
+			"autor" : "Pere Àguila",
+			"fecha" : "2010",
+			"estilo" : "cuadro abstracto",
+			"tipo" : "acuarela"
+		},
+		{
+			"nombre" : "camino largo",
+			"autor" : "Marta Lambert",
+			"fecha" : "1981",
+			"estilo" : "escultura",
+			"tipo" : "marmól"
+		}
+	]
+}

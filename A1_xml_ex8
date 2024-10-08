@@ -1,0 +1,35 @@
+<alumno fecha_nacimiento="23-02-01" lugar_nacimiento="Barcelona">Juan García</alumno>
+--------
+<establecimiento>
+	<Bar_Pasqual>
+		<dirección>avenida diagonal 232</dirección>
+		<dueño>Joan Alcover</dueño>
+	</Bar_Pasqual>
+	<Restaurant_Meravelles>
+		<dirección>Meridiana 111</dirección>
+		<dueño>Maria Garcia</dueño>
+	</Restaurant_Meravelles>
+	<Restaurant_Racó_de_l-Avila>
+		<dirección>Av.Roma 221</dirección>
+		<dueño>Alba Puig</dueño>
+	</Restaurant_Racó_de_l-Avila>
+</establecimiento>
+---------
+<obras>
+	<Azul_sobre_blanco artista="Pere Àguila">
+		<fecha>2014<fecha>
+		<tipo>cuadro abstracto</tipo>
+		<estilo>óleo</estilo>
+	</Azul_sobre_blanco>
+	<Gris_oscuro artista="Pere Àguila">
+		<fecha>2010<fecha>
+		<tipo>cuadro abstracto</tipo>
+		<estilo>acuarela</estilo>
+	</Gris_oscuro>
+	<Camino_largo artista="Marta Lambert">
+		<fecha>1982<fecha>
+		<tipo>escultura</tipo>
+		<estilo>mármol</estilo>
+	</Camino_largo>
+</obras>
+

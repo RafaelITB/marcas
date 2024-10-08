@@ -1,0 +1,14 @@
+
+<?xml version="1.0" encoding"UTF-8"?>
+<gato/>
+<perro/>
+<!-- tiene que estar la primera linea -->
+-------------------------------------
+
+<?xml version="1.0" encoding"UTF-8" standalone="yes"?>
+<perro/>
+<!-- hace falta especifir versión -->
+-------------------------------------
+
+<?xml version="1.0" standalone="yes"?>
+<!-- hace falta especifir versión, standalone solo acepta yes o no y este tipo de etiqueta no tiene cierre-->

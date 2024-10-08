@@ -1,0 +1,55 @@
+<?xml version="1.0"?>	
+<recetas>
+	<pasteles>
+		<pastel nombre="pastel de queso">
+			<ingredientes>
+				<ingrediente>
+					<nobre>queso</nobre>
+					<cantidad>1u</cantidad>
+				</ingrediente>
+				<ingrediente>
+					<nobre>pastel</nobre>
+					<cantidad>1u</cantidad>
+				</ingrediente>
+			</ingredientes>
+			<pasos>
+				<paso pos="1">
+					<nombre>Paso 1, coger ingredientes</nombre>
+					<descripción>poner el queso en el pastél<descripción>
+				</paso>
+				<paso pos="2">
+					<nombre>Paso 2, listo, a comer</nombre>
+					<descripción>emplatar y comer<descripción>
+				</paso>
+			</pasos>
+		</pastel>
+	</pasteles>
+	<helados>
+		<helado nombre="helado basico">
+			<ingredientes>
+				<ingrediente>
+					<nobre>agua</nobre>
+					<cantidad>1u</cantidad>
+				</ingrediente>
+				<ingrediente>
+					<nobre>hielera</nobre>
+					<cantidad>1u</cantidad>
+				</ingrediente>
+			</ingredientes>
+			<pasos>
+				<paso pos="1">
+					<nombre>Paso 1, agua en la hielera</nombre>
+					<descripción>vertír agua en la hielera<descripción>
+				</paso>
+				<paso pos="2">
+					<nombre>Paso 2, congelar</nombre>
+					<descripción>colocar hielera con agua en la nevera y esperar 5 horas<descripción>
+				</paso>
+				<paso pos="3">
+					<nombre>Paso 2, sacar helado</nombre>
+					<descripción>sacar helado y comer<descripción>
+				</paso>
+			</pasos>
+		</helado>
+	</helados>
+</recetas>

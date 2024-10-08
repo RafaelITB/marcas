@@ -1,0 +1,11 @@
+<corredor posicio="1">Manel Roure</corredor>
+<!-- falta comillas -->
+<alumne delegat="yes">Jaume Ravent</alumne>
+<!-- falta valor -->
+<coche tipo_combustible="gasolina">Seat Ibiza</coche>
+<!-- no puede haber espacio en atributo -->
+<politico cargo="alcalde" cargo2="diputat">Jordi Rufi</politico>
+<!-- no se repiten nombre de atributos -->
+
+<coche marca="Seat" color="Rojo" matricula="B3456L" conductor1"Jorge" conductor2="Maria" alquilado="yes"/>
+

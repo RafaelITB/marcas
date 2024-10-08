@@ -1,0 +1,66 @@
+ambos pesán 1.4kb, (sin contar este comentario)
+
+{
+  "recetas": {
+    "pasteles": [
+      {
+        "nombre": "pastel de queso",
+        "ingredientes": [
+          {
+            "nombre": "queso",
+            "cantidad": "1u"
+          },
+          {
+            "nombre": "pastel",
+            "cantidad": "1u"
+          }
+        ],
+        "pasos": [
+          {
+            "pos": "1",
+            "nombre": "Paso 1, coger ingredientes",
+            "descripcion": "poner el queso en el pastel"
+          },
+          {
+            "pos": "2",
+            "nombre": "Paso 2, listo, a comer",
+            "descripcion": "emplatar y comer"
+          }
+        ]
+      }
+    ],
+    "helados": [
+      {
+        "nombre": "helado basico",
+        "ingredientes": [
+          {
+            "nombre": "agua",
+            "cantidad": "1u"
+          },
+          {
+            "nombre": "hielera",
+            "cantidad": "1u"
+          }
+        ],
+        "pasos": [
+          {
+            "pos": "1",
+            "nombre": "Paso 1, agua en la hielera",
+            "descripcion": "vertir agua en la hielera"
+          },
+          {
+            "pos": "2",
+            "nombre": "Paso 2, congelar",
+            "descripcion": "colocar hielera con agua en la nevera y esperar 5 horas"
+          },
+          {
+            "pos": "3",
+            "nombre": "Paso 3, sacar helado",
+            "descripcion": "sacar helado y comer"
+          }
+        ]
+      }
+    ]
+  }
+}
+
