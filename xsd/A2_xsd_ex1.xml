@@ -1,0 +1,3 @@
+<xsi:noNamespaceSchemaLocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="A2_xml_ex11.xsd"="A2_xml_ex1.xsd" name="a" type="xs:string">
+<xs:element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
