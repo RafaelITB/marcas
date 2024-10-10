@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <matricula xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:noNamespaceSchemaLocation="./A2_xsd_ex7.1.xsd">
-
+    <ciclo>Asixc</ciclo>
+        <alumnos>
+            <alumno>
+                <nombre>Rafa</nombre>
+                <year>2024</year>
+                <asignaturas>
+                    <asignatura>M17</asignatura>
+                    <asignatura>M23</asignatura>
+                    <asignatura>M98</asignatura>
+                </asignaturas>
+            </alumno>
+                <alumno>
+                    <nombre>gilberto</nombre>
+                    <year>2024</year>
+                    <asignaturas>
+                        <asignatura>M17</asignatura>
+                        <asignatura>M23</asignatura>
+                        <asignatura>M98</asignatura>
+                    </asignaturas>
+                </alumno>
+        </alumnos>
 </matricula>

@@ -1,0 +1,12 @@
+<persona xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="./A2_xsd_ex8.1.xsd">
+    <nombre>Maria</nombre>
+    <mujer/>
+    <fecha_de_nacimiento>
+      <dia>21</dia>
+      <mes>10</mes>
+      <anyo>1998</anyo>
+    </fecha_de_nacimiento>
+    <ciudad>Bilbao</ciudad>
+  </persona>
+  
