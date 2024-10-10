@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <libro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:noNamespaceSchemaLocation="./A2.xsd_ex6.1.xsd">
-
+    <titulo>Genetic Programming</titulo>
+    <autor>John Koza</autor>
+    <fecha_publicacion>1994-01-01</fecha_publicacion>
+    <hora_publicacion>12:00:00</hora_publicacion>
+    <isbn>0-202-11170-5</isbn>
+    <editorial>The MIT Press</editorial>
+    <tapa_dura>true</tapa_dura>
+    <peso>0.5</peso>
 </libro>
