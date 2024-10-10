@@ -4,8 +4,8 @@
             <xs:sequence>
                 <xs:element name="alumno" maxOccurs="unbounded"/>
                     <xs:sequence>
-                        <xs:element name="nombre" type="xs:string"/>
-                        <xs:element name="apellido" type="xs:string"/>
+                        <xs:element name="nombre" type="xs:string" maxOccurs="unbounded"/>
+                        <xs:element name="apellido" type="xs:string" maxOccurs="unbounded"/>
                     </xs:sequence>
             </xs:sequence>
         </xs:complexType>
