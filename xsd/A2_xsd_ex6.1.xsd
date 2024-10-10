@@ -1,0 +1,16 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="libro">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="titulo" type="xs:string" />
+                <xs:element name="autor" type="xs:string" />
+                <xs:element name="fecha_publicacion" type="xs:date" />
+                <xs:element name="hora_publicacion" type="xs:time" />
+                <xs:element name="isbn" type="xs:string" />
+                <xs:element name="editorial" type="xs:string" />
+                <xs:element name="tapa_dura" type="xs:boolean" />
+                <xs:element name="peso" type="xs:decimal" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

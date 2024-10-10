@@ -3,10 +3,10 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="nombre" type="xs:string" />
-                <xs:element name="dni" type="xs:decimal"/>
+                <xs:element name="dni" type="xs:integer"/>
                 <xs:element name="direccion" type="xs:string"/>
                 <xs:element name="edad" type="xs:decimal"/>
-                <xs:element name="telefono" type="xs:decimal"/>
+                <xs:element name="telefono" type="xs:integer"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>

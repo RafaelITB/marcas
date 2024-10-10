@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="./A2.xsd_ex5.1.xsd">
+    <nombre>juan</nombre>
+    <dni>28542345</dni>
+    <direccion>San José 2</direccion>
+    <edad>22</edad>
+    <telefono>959434523</telefono>
+</alumno>
