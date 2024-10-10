@@ -1,3 +1,7 @@
-<xsi:noNamespaceSchemaLocation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:noNamespaceSchemaLocation="A2_xml_ex11.xsd"="A2_xml_ex1.xsd" name="a" type="xs:string">
-<xs:element xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ciudad" type="xs:string"/>
+  <xs:element name="fecha-de-nacimiento" type="xs:date"/>
+  <xs:element name="hora" type="xs:time"/>
+  <xs:element name="nota" type="xs:decimal"/>
+  <xs:element name="apto" type="xs:boolean"/>
+</xs:schema>
