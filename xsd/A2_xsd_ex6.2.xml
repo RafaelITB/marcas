@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <libro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:noNamespaceSchemaLocation="./A2.xsd_ex6.1.xsd">
+ xsi:noNamespaceSchemaLocation="./A2_xsd_ex6.1.xsd">
     <titulo>Genetic Programming</titulo>
     <autor>John Koza</autor>
     <fecha_publicacion>1994-01-01</fecha_publicacion>
