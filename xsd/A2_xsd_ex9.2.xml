@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Empresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="./A2_xsd_ex9.1.xsd">
+    <Apellido>Perez</Apellido>
+    <Nombre>Juan</Nombre>
+    <Empleado>1234567890</Empleado>
+    <email>juanperez@gmial.com</email>
+    <telefono>666 555 444</telefono>
+    <direccion>
+        <calle>Carrer de Pau Clarisk, 121</calle>
+        <ciudad>Barcelona</ciudad>
+        <codigoPostal>080009</codigoPostal>
+    </direccion>
+</Empresa>
