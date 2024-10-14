@@ -1,0 +1,16 @@
+<Empresa xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="./A2_xsd_ex12.1.xsd">
+    <Empleado>
+      <Apellido>Perez</Apellido>
+      <Nombre>Juan</Nombre>
+      <NumEmpleado>1234567890</NumEmpleado>
+      <Email>juanperez@gmail.com</Email>
+      <Direccion>
+        <Calle>Carrer de Pau Claris, 121</Calle>
+        <Ciudad>Barcelona</Ciudad>
+        <CP>08009</CP>
+        <Telefono>666 555 444</Telefono>
+      </Direccion>
+    </Empleado>
+  </Empresa>
+  

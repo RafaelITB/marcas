@@ -1,0 +1,28 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Empresa">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Empleado">
+                    <xs:complexType mixed="true">
+                        <xs:sequence>
+                            <xs:element name="Apellido" type="xs:string"/>
+                            <xs:element name="Nombre" type="xs:string"/>
+                            <xs:element name="NumEmpleado" type="xs:integer"/>
+                            <xs:element name="Email" type="xs:string" default="default_email@gmail.com"/>
+                            <xs:element name="Direccion">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Calle" type="xs:string"/>
+                                        <xs:element name="Ciudad" type="xs:string"/>
+                                        <xs:element name="CP" type="xs:integer"/>
+                                        <xs:element name="Telefono" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
