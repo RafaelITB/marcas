@@ -8,7 +8,7 @@
                             <xs:element name="nombre" type="xs:string"/>
                             <xs:element name="edad" type="xs:integer"/>
                         </xs:sequence>
-                        <xs:attribute name="id" type="xs:integer" fixed= "01"/>
+                        <xs:attribute name="id" type="xs:integer" default= "00"/>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
