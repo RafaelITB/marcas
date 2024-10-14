@@ -1,0 +1,17 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:attributeGroup name="NombreCompleto">
+        <xs:attribute name="nombre" type="xs:string" use="required"/>
+        <xs:attribute name="apellido" type="xs:string" use="required"/>
+</xs:attributeGroup>    
+<xs:element name="alumnos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="alumno" maxOccurs="unbounded">
+                    <xs:complexType>
+                            <xs:attributeGroup ref="NombreCompleto"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

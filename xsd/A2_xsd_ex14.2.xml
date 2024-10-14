@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="./A2_xsd_ex14.1.xsd">
+    <alumno nombre="pepe" apellido="Fernandez"/>
+    <alumno nombre="María" apellido="Villanueva"/>
+</alumnos>
