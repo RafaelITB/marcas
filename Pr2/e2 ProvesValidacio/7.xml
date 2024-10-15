@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Exemple vàlid: una recepta pot tenir categoria  -->
+<!--
+        Javier Amaya Boira
+        11/12/2022
+        ASIXc M04 UF1 A2
+        Pr2 XSD exercici 2
+-->
+
+<receptes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="e2_receptes.xsd">
+    <recepta dificultat="5" categoria="primer">
+        <autor>
+            <nom>John Doe</nom>
+            <dni>45784548F</dni>
+        </autor>
+        <nom>Papates amb llet</nom>
+        <ingredients>
+            <ingredient>
+                <quantitat>
+                    <valor>2</valor>
+                    <mesura>grams</mesura>
+                </quantitat>
+                <nom>all</nom>
+            </ingredient>
+        </ingredients>
+        <passos>
+            <pas>Fregir patates</pas>
+            <pas>Posar-hi la llet</pas>
+            <pas>deixar refredar</pas>
+        </passos>
+    </recepta>
+</receptes>

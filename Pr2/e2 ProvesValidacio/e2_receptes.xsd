@@ -1,0 +1,79 @@
+<!--
+Rafael Guiotto y Marc Guerra
+15/10/24
+Pr2 – XSD - Receptes
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="receptes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="recepta" maxOccurs="unbounded">  <!-- puede haber más de 1 'recepta' -->
+                    <xs:complexType>
+                        <xs:sequence>
+                             <xs:element name="autor" minOccurs="0"> <!-- autor no es necesario -->
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nom" type="xs:string" />
+                                        <xs:element name="dni">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="\d{8}[A-Za-z]"/> <!-- dni siempre es 8 numeros seguidos de 1 letra -->
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="nom" type="xs:string"/>
+                            <xs:element name="ingredients">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ingredient" maxOccurs="unbounded"> <!--Puede haber más de 1 'ingredient' -->
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="quantitat">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="valor" type="xs:integer" />
+                                                                <xs:element name="mesura" type="xs:string" />
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                    <xs:element name="nom" type="xs:string" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="passos"> 
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="pas" type="xs:string" maxOccurs="unbounded"/> <!-- puede haber más de 1 'pas' -->
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="dificultat">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:integer">
+                                    <xs:minInclusive value="0"/> <!-- la dificultad no puede ser negativa -->
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                        <xs:attribute name="categoria"> <!-- la categoria solo puede ser primer/segon/postres/altres -->
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string"> 
+                                    <xs:enumeration value="primer"/>
+                                    <xs:enumeration value="segon"/>
+                                    <xs:enumeration value="postres"/>
+                                    <xs:enumeration value="altres"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
