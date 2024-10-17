@@ -67,15 +67,120 @@
         <br>
         <h1>CREATE TABLE examples</h1>  
         <ol>
-            <li>BASIC CREATE TABLE statement</li>
-            <li>Creating a table with a particular storage engine</li>
-            <li>Creating a table with auto increment</li>
-            <li>Creating a table with the currebt timestamp</li>
-            <li>Creating a table with TIMESTAMP DEFAULT NOW()</li>
-            <li>Viewing a table definition</li>
+            <li><a href="#s1">BASIC CREATE TABLE statement</a></li>
+            <li><a href="#s2">Creating a table with a particular storage engine</a></li>
+            <li><a href="#s3">Creating a table with auto increment</a></li>
+            <li><a href="#s3">Creating a table with the currebt timestamp</a></li>
+            <li><a href="#s4">Creating a table with the currebt timestamp</a></li>
+            <li><a href="#s5">Creating a table with TIMESTAMP DEFAULT NOW()</a></li>
+            <li><a href="#s6">Viewing a table definition</a></li>
         </ol>
+        <h2 id="s1">BASIC CREATE TABLE statement</h2>
+        A very Basic CREATE TABLE statement which should work in any SQL database:
+        <pre>mysql> Create Table example (
+        id INT,
+        data VARCHAR(100)
+    );
+Query OK, 0 rows affected (0.03 sec)
+        </pre>
+        <h2 id="s2">Creating a table with a particular storage engine</h2>
+        MySql provides a variety of different tables with differing levels of performance and functionality. The default storage engine is InnoDB, but you can specify a different storage engine when creating a table:
+        <pre>mysql> Create Table example (
+            id INT,
+            data VARCHAR(100)
+        ) ENGINE=MyISAM;
+Query OK, 0 rows affected (0.03 sec)
+        </pre>
+        Note that the beggining with MySQL 4.1 ENGINE=MyISAM is optional, but it is a good idea to include it for clarity.<br>
+        Use SHOW CREATE TABLE (<a href="#s3">see below</a>) to chech taht MySQL has created the tables
         <br>
-        <h2>1. BASIC CREATE TABLE statement</h2>
+        <h2 id="s3">Creating a table with auto increment</h2>
+        Often you`ll want to be alble to automatically assing secuential value to a clumn.
+        <pre>mysql> CREATE TABLE example_autoincrement (
+        id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+        data VARCHAR(100)
+        );
+Query OK, 0 rows affected (0.01 sec)
+    
+mysql> INSERT INTO example_autoincrement (data)
+    -> VALUES ('Hello world!');
+Query OK, 1 row affected (0.01 sec)
+        
+mysql> SELECT * FROM example_autoincrement;
++----+-------------+
+| id | data        |
++----+-------------+
+|  1 | Hello world |
++----+-------------+
+1 row in set (0.01 sec)
+        </pre>
+        <h2 id="s4">Creating a table with the current timestamp</h2>
+        Often it’s useful to have an automatic timestamp on each record. The MySQL special datatype TIMESTAMP enables you to keep track of changes to a record.
+<br><pre>
+mysql> CREATE TABLE example_timestamp (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    data VARCHAR(100),
+    cur_timestamp TIMESTAMP(8)
+);
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> INSERT INTO example_timestamp (data)
+    VALUES ('The time of creation is:');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> SELECT * FROM example_timestamp;
++----+-------------------------------+--------------------------+
+| id | data                          | cur_timestamp            |
++----+-------------------------------+--------------------------+
+|  1 | The time of creation is:      | 2004-12-01 20:37:22      |
++----+-------------------------------+--------------------------+
+1 row in set (0.00 sec)
+
+mysql> UPDATE example_timestamp
+    SET data='The current timestamp is:'
+    WHERE id=1;
+Query OK, 1 row affected (0.03 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> SELECT * FROM example_timestamp;
++----+-------------------------------+--------------------------+
+| id | data                          | cur_timestamp            |
++----+-------------------------------+--------------------------+
+|  1 | The current timestamp is:     | 2004-12-01 20:38:55     |
++----+-------------------------------+--------------------------+
+1 row in set (0.01 sec)
+
+The column cur_timestamp is automatically updated every time the record is changed.
+        </pre>
+        <h2 id="s5">Creating a table with TIMESTAMP DEFAULT NOW()</h2>
+        MySQL supports the construct `TIMESTAMP DEFAULT NOW()` only from version 4.1:
+        <pre>CREATE TABLE example_default_now (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    data VARCHAR(100),
+    created TIMESTAMP DEFAULT NOW()
+);
+        </pre>
+        In this case the column `created` retains its initial value and is not changed during subsequent updates.
+        <br>
+        For versions prior to 4.1, the only workaround is to create two timestamp columns in a table, and explicitly set the second one when inserting the record, updated on each record update.
+        <h2 id="s6">Viewing a table definition</h2>
+        For a basic information about a table, use the DESCRIBE statement:
+        <pre>mysql> SELECT * FROM example_timestamp;
++----+-------------------------------+--------------------------+
+| id | data                          | cur_timestamp            |
++----+-------------------------------+--------------------------+
+|  1 | The current timestamp is:     | 2004-12-01 20:38:55      |
++----+-------------------------------+--------------------------+
+1 row in set (0.01 sec)
+        </pre> 
+        Exact definition of eh table:
+        <pre>+----+-------------------------------+--------------------------+
+| id | data                          | cur_timestamp            |
++----+-------------------------------+--------------------------+
+|  1 | The time of creation is:      | 2004-12-01 20:37:22      |
++----+-------------------------------+--------------------------+
+        </pre>
+        (this example from MySql 4.1.1)
     </main>    
 </body>
 </html>
