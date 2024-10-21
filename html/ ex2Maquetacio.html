@@ -1,11 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario Básico</title>
 </head>
 <body>
-    
+    <table border="3" cellpadding="10" cellspacing="0" style="border-collapse: separate; border-radius: 10px;">
+        <tr><th align="left" bordercolor="white">
+        <form action="#" method="post">
+            Nom:
+            <ul>
+            <label for="nombre"></label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            </ul>
+            Correu <br> electrònic:
+            <ul>
+            <label for="correo"></label>
+            <input type="email" id="correo" name="correo"><br><br>
+            </ul>   
+            Mensaje:
+            <ul>
+            <label for="mensaje"></label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea><br><br>
+            <input type="submit" value="Enviar">
+            </ul>
+        </form>
+        </th></tr>
+    </table>
 </body>
 </html>
