@@ -1,0 +1,24 @@
+body {
+    background-color: yellow;
+}
+header {
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+    color: orange;
+    font-weight: bold;
+}
+a:link {
+    color: red;
+    text-decoration: none;
+    }
+    a:hover {
+        color: green;
+        text-decoration: none;
+    }
+    a:visited {
+        color: purple;
+    }
+    a:active {
+        color: lime;
+    }

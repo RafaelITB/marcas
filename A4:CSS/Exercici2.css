@@ -1,0 +1,27 @@
+body {
+    color: blue;
+}
+a {
+    color: red;
+}
+
+#parrafo1 {
+    background-color: aqua;
+    padding: 20px;
+    font-size: large;
+    font-family: Verdana;
+    text-align: center;
+}
+#parrafo2, #parrafo4 {
+    background-color: silver;
+    font-size: large;
+    font-family: Verdana;
+    text-align: center;
+}
+#parrafo3 {
+    background-color: aqua;
+    font-size: larger;
+    padding: 20px;
+    font-family: Verdana;
+    text-align: right;
+}
