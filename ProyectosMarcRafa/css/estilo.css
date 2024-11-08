@@ -1,0 +1,393 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100000;
+  background-color: white;
+}
+
+#imagen1 {
+  display: block;
+  margin: 0 auto;
+}
+
+#menu {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+#menub {
+  color: black;
+  padding-inline: 25px;
+  text-decoration: none;
+}
+
+#menub:hover {
+  color: #7ABA96;
+}
+
+#apuntame {
+  display: flex;
+  justify-content: center;
+}
+
+#menu2 {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+}
+
+#menuc {
+  color: white;
+  padding-inline: 20px;
+  text-decoration: none;
+}
+
+#menuc:hover {
+  color: #7ABA96;
+}
+
+#imagenredonda {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#libro {
+  width: 230px;
+  height: 300px;
+}
+
+.columnas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carta,
+.carta2 {
+  width: 300px;
+  margin-right: 0px;
+  padding: 0px;
+  padding-top: 15px;
+  text-align: center;
+  height: 400px;
+}
+
+.carta2 {
+  margin-left: -25px;
+}
+
+.carta_baja {
+  width: 350px;
+  height: 250px;
+  margin-bottom: 0px;
+  padding: 0px;
+  padding-top: 15px;
+  text-align: center;
+
+}
+
+
+.cartalibro {
+  background-color: #deddda;
+  text-align: center;
+  height: 450px;
+}
+
+.h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+}
+
+.p {
+  margin-top: 5px;
+  line-height: 1.6;
+  color: #555;
+
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 10px;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #7ABA96;
+  border: none;
+  border-radius: 5px;
+  margin-top: auto;
+  text-decoration: none;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#main {
+  flex: 1;
+  padding-bottom: 20px;
+}
+
+.wrapper {
+  border: 1px solid #0000;
+  max-width: 20px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto;
+  width: 100%;
+}
+
+
+.button {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #7ABA96;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 80px;
+}
+
+.tabla {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1px;
+}
+
+#imagenescarta {
+  height: 200px;
+  width: 300px;
+}
+
+#CardFechas {
+  font-size: 13px;
+  margin: 3px 0
+}
+
+#CardLine {
+  color: #7ABA96;
+  margin: 1px 0
+}
+
+#CardDesc {
+  font-size: 14px;
+  display: block;
+  margin: 5px 0;
+  text-align: justify;
+}
+
+#CardTitle {
+  color: black;
+  text-decoration: none;
+}
+
+#CardTitle:hover {
+  color: grey;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.recipe {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.recipe h3 {
+  color: #006400;
+  margin-top: 0;
+}
+
+.recipe img {
+  float: left;
+  margin-right: 10px;
+  max-width: 100px;
+  border-radius: 5px;
+}
+
+.recipe-info {
+  margin-left: 120px;
+}
+
+.info-item {
+  font-weight: bold;
+}
+
+.listas {
+  width: 800px;
+  margin: auto;
+  margin-bottom: 100px;
+  background-color: #deddda;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#listTitle {
+  color: green;
+}
+
+#listTitle:hover {
+  color: #7ABA96;
+}
+
+.infolist {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.ListImage {
+  height: 8px;
+  width: 8px;
+}
+
+.p-list {
+  margin: 0px;
+  display: inline-block;
+}
+
+#formulario {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.slider-container {
+  display: flex;
+  width: 100%;
+  height: 192px;
+  overflow-x: scroll
+}
+
+.slider-container img {
+  flex: 0 0 24%;
+  width: 100%;
+  object-fit: cover;
+
+
+  scroll-snap-align: center;
+}#header-receta {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+#titulo-receta {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+#seccion-introduccion {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#intro-receta {
+    color: #555;
+}
+
+#seccion-ingredientes, #seccion-preparacion {
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+#titulo-ingredientes, #titulo-preparacion {
+    font-family: 'Georgia', serif;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+#lista-ingredientes, #lista-preparacion {
+    list-style: none;
+    padding-left: 20px;
+    font-size: 1em;
+}
+
+#lista-ingredientes li, #lista-preparacion li {
+    margin: 5px 0;
+}
+
+#footer-receta {
+    text-align: center;
+    padding: 15px;
+    background-color: #f2f2f2;
+    color: #666;
+    font-size: 0.9em;
+}
+
+#seccion-introduccion {
+  margin: 20px auto;
+  max-width: 800px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+#intro-receta {
+  color: #555;
+}
+
+#seccion-ingredientes, #seccion-preparacion {
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+#titulo-ingredientes, #titulo-preparacion {
+  color: #7ABA96;;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+#lista-ingredientes, #lista-preparacion {
+  list-style: none;
+  padding-left: 20px;
+  font-size: 1em;
+}
+
+#lista-ingredientes li, #lista-preparacion li {
+  margin: 5px 0;
+  list-style: disc;
+}
+
+#footer-receta {
+  text-align: center;
+  padding: 15px;
+  background-color: #f2f2f2;
+  color: #666;
+  font-size: 0.9em;
+} 

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/estilo.css"">
+</head>
+<body>
+  <header>
+    <img id="imagen1" src="../imagenes/delicias.png" alt="Delicias">
+    <hr>
+    <ul>
+      <ul id="menu">
+        <a id="menub" href="../index.html">INICIO</a>
+        <a id="menub" href="../index.html">SOBRE MÍ</a>
+        <a id="menub" href="../listado/listado.html">RECETAS</a>
+        <a id="menub" href="../contacto/contacto.html">CONTACTO</a>
+        <a id="menub" href="../otros/otros.html">OTRAS COSAS</a>
+      </ul>
+    </ul>
+    <hr>
+  </header>
+  <div id="formulario">
+  <form action="/submit-recipe" method="POST">
+    <h2>Añadir Nueva Receta</h2>
+
+    <label for="recipe-name">Nombre de la receta:</label><br>
+    <input type="text" id="recipe-name" name="recipe-name" required><br><br>
+
+    <label for="difficulty">Dificultad:</label><br>
+    <select id="difficulty" name="difficulty" required>
+      <option value="fácil">Fácil</option>
+      <option value="media">Media</option>
+      <option value="difícil">Difícil</option>
+    </select><br><br>
+
+    <label for="cuisine">Cocina:</label><br>
+    <input type="text" id="cuisine" name="cuisine" required><br><br>
+
+    <label for="vegetarian">Vegetariana:</label><br>
+    <select id="vegetarian" name="vegetarian" required>
+      <option value="sí">Sí</option>
+      <option value="no">No</option>
+    </select><br><br>
+
+    <label for="gluten-free">Sin gluten:</label><br>
+    <select id="gluten-free" name="gluten-free" required>
+      <option value="sí">Sí</option>
+      <option value="no">No</option>
+    </select><br><br>
+
+    <label for="anticancer">Anticáncer:</label><br>
+    <select id="anticancer" name="anticancer" required>
+      <option value="sí">Sí</option>
+      <option value="no">No</option>
+    </select><br><br>
+
+    <label for="author">Autor:</label><br>
+    <input type="text" id="author" name="author" required><br><br>
+
+    <button type="submit">Añadir Receta</button>
+  </form>
+</div>
+</body>
+</html>
