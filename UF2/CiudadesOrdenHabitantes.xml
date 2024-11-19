@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="ciudadesOrdenHabitantes.xsl" ?>
+<ciudades>
+    <ciudad>
+        <nombre>Madrid</nombre>
+        <habitantes>3500000</habitantes>
+    </ciudad>
+    <ciudad>
+        <nombre>Malaga</nombre>
+        <habitantes>800000</habitantes>
+    </ciudad>
+    <ciudad>
+        <nombre>Toledo</nombre>
+        <habitantes>50000</habitantes>
+    </ciudad>
+    <ciudad>
+        <nombre>Vic</nombre>
+        <habitantes>3</habitantes>
+    </ciudad>
+    <ciudad>
+        <nombre>Barcelona</nombre>
+        <habitantes>2500000</habitantes>
+    </ciudad>
+</ciudades> 

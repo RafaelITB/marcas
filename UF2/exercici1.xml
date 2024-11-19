@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="exercici1.css" type="text/css"?>
+<professorat>
+    <nom>Meritxell</nom>
+    <cognom>Durany</cognom>
+    <departament>Dept. Informàtica</departament>
+    <assignatura>
+        <M>M04</M>
+        <M>M2</M>
+        <M>M8</M>
+    </assignatura>
+</professorat>
