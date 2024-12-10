@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let string = prompt("introduce 2 numeros separados por espacio");
+        num = string.split(" ");
+        if (num.length == 2 && !isNaN(num[0]) && !isNaN(num[1])) {
+            alert(num[0] + " + " + num[1] + " = " + (Number(num[0]) + Number(num[1])))
+        }else {
+        alert("Valor introducido invalido");
+        }
+    </script>
+</body>
+</html>

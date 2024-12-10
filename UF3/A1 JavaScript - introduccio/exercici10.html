@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let word = prompt("escribe una palabra: ");
+        if (!word.includes(" ")) { // detecta si tiene espacios ya que solo acepta 1 palabra
+            if (word.replace(/[^a-zA-ZáéíóúÁÉÍÓÚ0-9\s]/g, '').length > 5) { // quita caracteres especiales para contar las letras
+                alert("la palabra \"" + word+ "\" tiene más de 5 letras")
+            } else {
+                alert("la palabra \"" + word + "\" tiene menos de 5 letras");
+            }
+        } else {
+            alert("valor invalido")
+        }
+    </script>
+</body>
+</html>
