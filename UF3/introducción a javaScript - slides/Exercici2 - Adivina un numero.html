@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego: Adivina un Número</title>
+    <script>
+        let numeroAleatorio = Math.floor(Math.random() * 100) + 1
+        function adivinarNumero() {
+            let input = prompt("Introduce un número (o pulsa Cancelar para salir):");
+            if (input === null) {
+                alert("Has cancelado el juego.");
+                return;
+            }
+            let numeroUsuario = parseInt(input);
+            if (isNaN(numeroUsuario)) {
+                alert("Por favor, introduce un número válido.");
+                adivinarNumero();
+                return;
+            }
+            if (numeroUsuario === numeroAleatorio) {
+                alert("¡Felicidades! Has encontrado el número.");
+            } else if (numeroUsuario < numeroAleatorio) {
+                alert("El número es mayor.");
+                adivinarNumero();
+            } else {
+                alert("El número es menor.");
+                adivinarNumero();
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Juego: Adivina un Número</h1>
+    <p>Pulsa el botón para comenzar a jugar.</p>
+    <button onclick="adivinarNumero()">Comenzar</button>
+</body>
+
+</html>
