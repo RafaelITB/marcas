@@ -1,10 +1,10 @@
 window.onload = function() {
-    const fecha = new Date();
-    const fechaFormateada = fecha.toLocaleDateString();
+    var fecha = new Date();
+    var fechaFormateada = fecha.toLocaleDateString();
     document.getElementById("fechaActual").innerText = "Fecha actual: " + fechaFormateada;
     
-    const diaSemana = fecha.getDay();
-    const hora = fecha.getHours();
+    var diaSemana = fecha.getDay();
+    var hora = fecha.getHours();
     
     if (diaSemana === 1 && hora >= 15 && hora < 18) {
         document.getElementById("M04checker").innerText = "estas en clase de M04";
@@ -21,12 +21,12 @@ window.onload = function() {
 }
 
 function comprobarFinDeSemana() {
-    const fechaBase = "09/24/";
+    var fechaBase = "09/24/";
     let resultados = [];
 
     for (let año = 2024; año < 2024 + 36; año++) {
-        const fechaComprobada = new Date(año, 8, 24);
-        const diaSemana = fechaComprobada.getDay();
+        var fechaComprobada = new Date(año, 8, 24);
+        var diaSemana = fechaComprobada.getDay();
 
         if (diaSemana === 0 || diaSemana === 6) {
             resultados.push(año);
@@ -36,10 +36,10 @@ function comprobarFinDeSemana() {
 }
 
 function actualizarReloj() {
-    const fecha = new Date();
-    const horas = String(fecha.getHours()).padStart(2, '0');
-    const minutos = String(fecha.getMinutes()).padStart(2, '0');
-    const segundos = fecha.getSeconds();
+    var fecha = new Date();
+    var horas = String(fecha.getHours()).padStart(2, '0');
+    var minutos = String(fecha.getMinutes()).padStart(2, '0');
+    var segundos = fecha.getSeconds();
     
     document.getElementById("reloj").innerText = `${horas}:${minutos}:${segundos}`;
 }

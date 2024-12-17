@@ -1,7 +1,7 @@
 // Función para comparar dos números
 function compararNumeros() {
-    const numero1 = parseInt(document.getElementById("num1").value);
-    const numero2 = parseInt(document.getElementById("num2").value);
+    var numero1 = parseInt(document.getElementById("num1").value);
+    var numero2 = parseInt(document.getElementById("num2").value);
     let resultado1;
     if (isNaN(numero1) || isNaN(numero2)) {
         resultado = "Por favor, ingresa dos números válidos.";
@@ -18,14 +18,14 @@ function compararNumeros() {
   
   // Función para multiplicar dos números sin usar '*'
   function multiplicarNumeros() {
-    const numeroA = parseInt(document.getElementById("numA").value);
-    const numeroB = parseInt(document.getElementById("numB").value);
+    var numeroA = parseInt(document.getElementById("numA").value);
+    var numeroB = parseInt(document.getElementById("numB").value);
     let resultado2 = 0;
     let proceso =  "";
     if (isNaN(numeroA) || isNaN(numeroB)) {resultado = "Por favor, ingresa dos números válidos.";} else {
-        const esNegativo = (numeroA < 0) ^ (numeroB < 0); // XOR para detectar signo
-        const absA = Math.abs(numeroA);
-        const absB = Math.abs(numeroB);
+        var esNegativo = (numeroA < 0) ^ (numeroB < 0); // XOR para detectar signo
+        var absA = Math.abs(numeroA);
+        var absB = Math.abs(numeroB);
     
         for (let i = 0; i < absB; i++) {
         resultado2 += absA;
@@ -38,9 +38,9 @@ function compararNumeros() {
 }
 
 function multiplicar3Numeros() {
-    const numeroX = parseInt(document.getElementById("numX").value);
-    const numeroY = parseInt(document.getElementById("numY").value);
-    const numeroZ = parseInt(document.getElementById("numZ").value);
+    var numeroX = parseInt(document.getElementById("numX").value);
+    var numeroY = parseInt(document.getElementById("numY").value);
+    var numeroZ = parseInt(document.getElementById("numZ").value);
     let resultado3 = 0;
     let proceso1 = "";
     let proceso2 = "";
@@ -48,10 +48,10 @@ function multiplicar3Numeros() {
         document.getElementById("resultadoMultiplicacion3").innerText = "Por favor, ingresa tres números válidos.";
         return;
     }
-    const esNegativo = (numeroX < 0) ^ (numeroY < 0) ^ (numeroZ < 0); // XOR para detectar signo negativo
-    const absX = Math.abs(numeroX);
-    const absY = Math.abs(numeroY);
-    const absZ = Math.abs(numeroZ);
+    var esNegativo = (numeroX < 0) ^ (numeroY < 0) ^ (numeroZ < 0); // XOR para detectar signo negativo
+    var absX = Math.abs(numeroX);
+    var absY = Math.abs(numeroY);
+    var absZ = Math.abs(numeroZ);
     
     for (let i = 0; i < absY; i++) {
         resultado3 += absX;
@@ -84,33 +84,33 @@ function encontrarNumeros() {
 
 
 function calcularNotaMedia() {
-    const nota1 = parseFloat(document.getElementById("nota1").value);
-    const nota2 = parseFloat(document.getElementById("nota2").value);
-    const nota3 = parseFloat(document.getElementById("nota3").value);
+    var nota1 = parseFloat(document.getElementById("nota1").value);
+    var nota2 = parseFloat(document.getElementById("nota2").value);
+    var nota3 = parseFloat(document.getElementById("nota3").value);
     
     if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3)) {
         document.getElementById("resultadoNotaMedia").innerText = "Por favor, ingresa notas válidas.";
     } else {
-        const media = ((nota1 + nota2 + nota3) / 3).toFixed(1);
+        var media = ((nota1 + nota2 + nota3) / 3).toFixed(1);
         document.getElementById("resultadoNotaMedia").innerText = "La media es: " + media;
     }
 }
 
 function calcularCubo() {
-    const numero = document.getElementById("numeroCubo").value;
+    var numero = document.getElementById("numeroCubo").value;
     if (isNaN(numero)) {
         alert("No es un número.");
         document.getElementById("resultadoCubo").innerText = "Por favor, ingresa un número válido.";
         return false;
     }
 
-    const numeroEntero = parseInt(numero);
+    var numeroEntero = parseInt(numero);
     if (numero != numeroEntero) {
         alert("El número no es un entero.");
         document.getElementById("resultadoCubo").innerText = "Por favor, ingresa un número entero.";
         return false;
     }
 
-    const cubo = Math.pow(numeroEntero, 3);
+    var cubo = Math.pow(numeroEntero, 3);
     document.getElementById("resultadoCubo").innerText = "El cubo de " + numeroEntero + " es: " + cubo;
 }
