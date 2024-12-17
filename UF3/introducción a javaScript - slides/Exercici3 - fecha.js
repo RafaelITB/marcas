@@ -39,7 +39,7 @@ function actualizarReloj() {
     const fecha = new Date();
     const horas = String(fecha.getHours()).padStart(2, '0');
     const minutos = String(fecha.getMinutes()).padStart(2, '0');
-    const segundos = fecha.getSeconds();  // No usamos padStart para los segundos
+    const segundos = fecha.getSeconds();
     
     document.getElementById("reloj").innerText = `${horas}:${minutos}:${segundos}`;
 }
