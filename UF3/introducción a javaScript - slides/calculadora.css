@@ -1,0 +1,37 @@
+.box {
+    border: 2px solid red;
+    margin: 5px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid red;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+.container {
+    display: inline-block;
+}
+
+#SinFuncion {
+    cursor: not-allowed;
+}
+#number {
+    background-color: rgb(224, 224, 224);
+}
+a {
+    text-decoration: none;
+    color: red;
+}
