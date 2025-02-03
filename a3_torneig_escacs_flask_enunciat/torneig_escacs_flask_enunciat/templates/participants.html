@@ -12,7 +12,9 @@
     </form>
     <h2>Llista de Participants</h2>
     <ul>
-        <!-- TODO: Afegir lògica per mostrar participants -->
+        {% for participant in participants %}
+            <li>{{ participant }}</li>
+        {% endfor %}
     </ul>
 </body>
 </html>

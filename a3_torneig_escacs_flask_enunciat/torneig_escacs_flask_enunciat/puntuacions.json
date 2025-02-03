@@ -10,5 +10,21 @@
     "as": {
         "nom": "as",
         "punts": 0
+    },
+    "qasa": {
+        "nom": "qasa",
+        "punts": 0
+    },
+    "b": {
+        "nom": "b",
+        "punts": 1
+    },
+    "asas": {
+        "nom": "asas",
+        "punts": 0
+    },
+    "ada": {
+        "nom": "ada",
+        "punts": 0
     }
 }
