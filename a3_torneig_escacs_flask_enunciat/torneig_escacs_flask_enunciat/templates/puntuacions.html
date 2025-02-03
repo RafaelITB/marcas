@@ -1,26 +1,28 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Puntuación</title>
+    <title>Puntuacions</title>
 </head>
 <body>
-    <h1>Puntuación</h1>
-
-    <h2>Ranking Actual</h2>
-    <table border="1">
-        <tr>
-            <th>Posició</th>
-            <th>Jugador</th>
-            <th>Puntuació</th>
-        </tr>
-        {% for rank, jugador in ranking.items() %}
+    <h2>Ranking de Jugadors</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Posición---</th>
+                <th>Jugador---</th>
+                <th>Punts</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for rank, jugador in ranking.items() %}
             <tr>
                 <td>{{ loop.index }}</td>
                 <td>{{ jugador['nom'] }}</td>
                 <td>{{ jugador['punts'] }}</td>
             </tr>
-        {% endfor %}
+            {% endfor %}
+        </tbody>
     </table>
-
 </body>
 </html>

@@ -1,30 +1,10 @@
 {
-    "hola": {
-        "nom": "hola",
-        "punts": 0
-    },
-    "a": {
-        "nom": "a",
-        "punts": 0
-    },
     "as": {
         "nom": "as",
-        "punts": 0
-    },
-    "qasa": {
-        "nom": "qasa",
-        "punts": 0
-    },
-    "b": {
-        "nom": "b",
         "punts": 1
     },
-    "asas": {
-        "nom": "asas",
-        "punts": 0
-    },
-    "ada": {
-        "nom": "ada",
-        "punts": 0
+    "asa": {
+        "nom": "asa",
+        "punts": 1
     }
 }
