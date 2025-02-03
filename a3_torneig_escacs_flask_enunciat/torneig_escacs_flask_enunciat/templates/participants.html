@@ -4,13 +4,13 @@
     <title>Gestionar Participants</title>
 </head>
 <body>
-    <h1>Gestionar Participants</h1>
+    <h1>Gestionar Participantes</h1>
     <form method="POST" action="/participants">
         <label for="nom">Nom del Participant:</label>
         <input type="text" id="nom" name="nom" required>
         <button type="submit">Afegir Participant</button>
     </form>
-    <h2>Llista de Participants</h2>
+    <h2>Lista de Participantes</h2>
     <ul>
         {% for participant in participants %}
             <li>{{ participant }}</li>
